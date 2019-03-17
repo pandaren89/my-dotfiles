@@ -6,6 +6,7 @@ lsd
 sixv
 st
 dmenu
+nnn
 neovim
 feh
 conky
