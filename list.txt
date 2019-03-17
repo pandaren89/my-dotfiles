@@ -1,6 +1,13 @@
 cdm
+curl
+wget
+ncdu
 lsd
 sixv
+st
+dmenu
 neovim
 feh
 conky
+tree
+multitail
