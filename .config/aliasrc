@@ -108,7 +108,7 @@ alias mountedinfo='df -hT'
 
 # Show memory info
 alias free='free -h'
-alias topmem="ps -eo pmem,pcpu,vsize,pid,cmd | sort -k 1 -nr | head -10"
+alias topmem="/bin/ps -eo pmem,pcpu,vsize,pid,cmd | sort -k 1 -nr | head -10"
 
 # Use if exists
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
