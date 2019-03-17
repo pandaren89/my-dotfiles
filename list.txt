@@ -1,0 +1,6 @@
+cdm
+lsd
+sixv
+neovim
+feh
+conky
