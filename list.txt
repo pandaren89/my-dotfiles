@@ -12,5 +12,13 @@ feh
 conky
 tree
 multitail
-i3
-i3
+conky-i3
+i3dm
+i3exit
+i3-scripts
+i3-scrot
+i3-gaps
+i3-help
+i3status
+nerd-fonts-terminus
+papirus-icon-theme
