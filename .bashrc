@@ -20,6 +20,7 @@ elif [ -f /etc/bash_completion ]; then
 fi
 
 ## Helper functions
+# Archieve extraction
 extract () {
 	for archive in $*; do
 		if [ -f $archive ] ; then
@@ -42,6 +43,7 @@ extract () {
 		fi
 	done
 }
+
 # Searches for text in all files in the current folder
 ftext ()
 {
@@ -76,6 +78,7 @@ cpp()
 	END { print "" }' total_size=$(stat -c '%s' "${1}") count=0
 }
 
+# Go to directory
 # Copy and go to the directory
 cpg ()
 {
@@ -119,7 +122,8 @@ up ()
 	cd $d
 }
 
-#Automatically do an ls after each cd
+# Maybe?
+# Automatically do an ls after each cd
 # cd ()
 # {
 # 	if [ -n "$1" ]; then
