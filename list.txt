@@ -12,3 +12,5 @@ feh
 conky
 tree
 multitail
+i3
+i3
