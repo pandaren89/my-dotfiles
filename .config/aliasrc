@@ -1,0 +1,18 @@
+#!/bin/sh
+alias ka="killall" \
+	p="sudo pacman" \
+	SS="sudo systemctl" \
+	g="git" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	x="sxiv -ft *" \
+	sdn="sudo shutdown -h now" \
+  rbt="sudo reboot"
+  ls="lsd"
+  ll="lsd -al"
+  la="lsd -a"
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi" \
+
+command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
