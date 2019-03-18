@@ -236,10 +236,10 @@ function __setprompt
 	fi
 
 	# Current directory
-	PS1+="\[${DARKGRAY}\]Files:"
 	PS1+="\[${DARKGRAY}\]:\[${BROWN}\]\w\[${DARKGRAY}\])-"
 
 	# Total size of files in current directory
+	PS1+="\[${DARKGRAY}\]Files:"
 	PS1+="(\[${GREEN}\]$(/bin/ls -lah | /bin/grep -m 1 total | /bin/sed 's/total //')\[${DARKGRAY}\]:"
 
 	# Number of files
