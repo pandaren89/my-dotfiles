@@ -7,8 +7,11 @@ sixv
 st
 dmenu
 nnn
+ranger
+entr
 neovim
 feh
+mupdf
 conky
 tree
 multitail
@@ -22,3 +25,7 @@ i3-help
 i3status
 nerd-fonts-terminus
 papirus-icon-theme
+
+lightdm
+xorg
+
