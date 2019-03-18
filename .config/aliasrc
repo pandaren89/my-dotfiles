@@ -21,7 +21,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias ebrc='$EDITOR ~/.bashrc'
 
 # alias to show the date
-alias date='date "+%Y-%m-%d %A %T %Z"'
+# alias date='date "+%Y-%m-%d %A %T %Z"'
 
 # Alias's to modified commands
 alias cp='cp -i'
