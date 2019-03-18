@@ -42,7 +42,7 @@ alias ....='cd ../..'
 alias ......='cd ../../..'
 
 # cd into the old directory
-alias -='cd "$OLDPWD"'
+alias -- -='cd "$OLDPWD"'
 
 # Remove a directory and all files
 alias rmd='/bin/rm  --recursive --force --verbose '
