@@ -10,4 +10,4 @@ OSD_THEME="powerline"
 Install Oh-my-zsh:
 
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
-OSD_THEME="agnoster"
+ZSH_THEME="agnoster"
