@@ -104,7 +104,6 @@ resetpulse() { dialog --infobox "Reseting Pulseaudio..." 4 50
 ohmybash() {
 	su andrew
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
-	exit
 	}
 
 finalize(){ \
