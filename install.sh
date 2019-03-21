@@ -101,8 +101,10 @@ resetpulse() { dialog --infobox "Reseting Pulseaudio..." 4 50
 	killall pulseaudio
 	sudo -n "$name" pulseaudio --start ;}
 	
-ohmybash() { sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" 
-	echo "[ -f "$HOME/.aliasrc" ] && source "$HOME/.aliasrc"" >> /home/andrew/.bashrc
+ohmybash() {
+	su andrew
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+	exit
 	}
 
 finalize(){ \
