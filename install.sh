@@ -101,12 +101,13 @@ resetpulse() { dialog --infobox "Reseting Pulseaudio..." 4 50
 	killall pulseaudio
 	sudo -n "$name" pulseaudio --start ;}
 	
-ohmybash() { sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" }
+ohmybash() { sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" 
+	echo "[ -f "$HOME/.aliasrc" ] && source "$HOME/.aliasrc"" >> /home/andrew/.bashrc
+	}
 
 finalize(){ \
 	dialog --infobox "Preparing welcome message..." 4 50
-	echo "exec_always --no-startup-id notify-send -i ~/.scripts/pix/larbs.png '<b>Welcome to LARBS:</b> Press Super+F1 for the manual.' -t 10000"  >> "/home/$name/.config/i3/config"
-	dialog --title "All done!" --msgbox "Congrats! Provided there were no hidden errors, the script completed successfully and all the programs and configuration files should be in place.\\n\\nTo run the new graphical environment, log out and log back in as your new user, then run the command \"startx\" to start the graphical environment (it will start automatically in tty1).\\n\\n.t Luke" 12 80
+	dialog --title "All done!" --msgbox "Congrats! Provided there were no hidden errors, the script completed successfully." 12 80
 	}
 
 ### THE ACTUAL SCRIPT ###
