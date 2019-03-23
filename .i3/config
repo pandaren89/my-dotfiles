@@ -63,7 +63,7 @@ bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+F4 exec terminal -e 'ranger'
 #bindsym $mod+F4 exec terminal -e 'nnn'
 bindsym $mod+F5 exec terminal -e 'mocp'
-bindsym $mod+F7 exec --no-startup-id slack-desktop
+bindsym $mod+F7 exec --no-startup-id slack
 bindsym $mod+Shift+b exec terminal -e 'bmenu'
 bindsym $mod+Shift+c exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+c exec --no-startup-id compton -b
@@ -191,7 +191,7 @@ assign [class="Pcmanfm"] $ws3
 assign [title="ranger"] $ws4
 assign [title="mocp"] $ws5
 assign [title="mpv"] $ws6
-assign [title="slack-desktop"] $ws7
+assign [title="Slack"] $ws7
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
