@@ -185,10 +185,13 @@ bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 # Open applications on specific workspaces
-# assign [class="Thunderbird"] $ws1
+assign [class="Thunderbird"] $ws1
 assign [class="Chromium"] $ws2
 assign [class="Pcmanfm"] $ws3
+assign [title="ranger"] $ws4
 assign [title="mocp"] $ws5
+assign [title="mpv"] $ws6
+assign [title="slack-desktop"] $ws7
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
