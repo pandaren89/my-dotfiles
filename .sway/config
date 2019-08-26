@@ -70,7 +70,15 @@ output * bg ~/Downloads/ml.jpg fill
     bindsym $mod+Shift+e exit
 
     # swaylock
-    bindsym $mod+Shift+z exec swaylock -i ~/Downloads/ml2.jpg -s fill
+    bindsym $mod+Shift+z exec swaylock -i ~/Downloads/ml10.jpg -t
+
+    # multimedia
+    bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+    bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+    bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+    bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+    bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+    bindsym XF86MonBrightnessUp exec brightnessctl set +5%
 
 #
 # Moving around:
